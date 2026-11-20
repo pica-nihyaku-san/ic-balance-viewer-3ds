@@ -223,3 +223,6 @@ SystemControlInfo:
     spi: 0x0004013000002302
     ssl: 0x0004013000002f02
 
+
+RomFs:
+  RootPath: "romfs"

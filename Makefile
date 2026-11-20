@@ -38,10 +38,10 @@ DATA		:=	data
 INCLUDES	:=	include
 GRAPHICS	:=	gfx
 GFXBUILD	:=	$(BUILD)
-APP_TITLE	:=	IC Balance Viewer
-APP_DESCRIPTION	:=	FeliCa IC card balance and history viewer (read-only)
-APP_AUTHOR	:=	Muse
-#ROMFS		:=	romfs
+APP_TITLE	:=	IC残高ビューア
+APP_DESCRIPTION	:=	交通系ICカードの残高・履歴ビューア（読み取り専用）
+APP_AUTHOR	:=	pica200san
+ROMFS		:=	romfs
 #GFXBUILD	:=	$(ROMFS)/gfx
 
 #---------------------------------------------------------------------------------
@@ -60,7 +60,7 @@ CXXFLAGS	:= $(CFLAGS) -fno-rtti -fno-exceptions -std=gnu++11
 ASFLAGS	:=	-g $(ARCH)
 LDFLAGS	=	-specs=3dsx.specs -g $(ARCH) -Wl,-Map,$(notdir $*.map)
 
-LIBS	:= -lctru -lm
+LIBS	:= -lcitro2d -lcitro3d -lctru -lm
 
 #---------------------------------------------------------------------------------
 # list of directories containing libraries, this must be the top level containing
